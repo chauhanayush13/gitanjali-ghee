@@ -1,0 +1,55 @@
+/* Cart.css */
+.cart{
+    margin-top: 7rem;
+}
+/* Make table scrollable on small screens */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Align buttons and text properly */
+.cart-table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Style total price */
+h4 {
+    font-weight: bold;
+}
+
+/* Remove button spacing */
+.btn-sm {
+    padding: 5px 10px;
+}
+
+/* Mobile Card Styles */
+.cart-item-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.cart-item-card:hover {
+    transform: scale(1.02);
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Button Styles */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+

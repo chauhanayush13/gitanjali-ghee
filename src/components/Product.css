@@ -1,0 +1,107 @@
+.products{
+    margin-top: 6rem;
+}
+
+.product_heading{
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.filter_button{
+    color:white;
+    font-size: 20px;
+    background-color:rgb(106, 28, 207);;
+    transition:background-color .4s ease;
+}
+
+.filter_button:hover{
+    color:white;
+    background-color:  rgb(224, 71, 63)
+}
+
+.addtocart_button{
+    color:white;
+    width:70%;
+    font-size: 20px;
+    background-color: rgb(224, 71, 63);
+    transition:background-color .4s ease;
+}
+
+.addtocart_button:hover{
+    color:white;
+    background-color: rgb(106, 28, 207);
+}
+
+/* Default: 1 product per row */
+.row1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* For screens between 300px and 500px, show 2 products per row */
+@media (min-width: 300px) and (max-width: 400px) {
+    .row1 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap:1;
+    }
+    .card_img{
+        height: 10rem;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+    .row1 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap:1;
+    }
+    .card_img{
+        height: 13rem;
+    }
+    .addtocart_button{
+        font-size: 15px;
+        width:100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 700px) {
+    .row1 {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns */
+        gap:1;
+    }
+    .card_img{
+        height: 13rem;
+    }
+    .addtocart_button{
+        font-size: 15px;
+        width:100%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .row1{
+        grid-template-columns: repeat(3, 1fr); /* 2 columns */
+        gap:1;
+    }
+    .card_img{
+        height: 13rem;
+    }
+    .addtocart_button{
+        font-size: 15px;
+        width:100%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1600px) {
+    .row1 {
+        grid-template-columns: repeat(4, 1fr); /* 2 columns */
+    }
+    .card_img{
+        height: 13rem;
+    }
+    .addtocart_button{
+        font-size: 15px;
+        width:100%;
+    }
+}
+

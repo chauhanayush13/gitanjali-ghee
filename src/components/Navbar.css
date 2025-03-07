@@ -1,0 +1,105 @@
+.navbar{
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 1;
+    font-family:Geneva, sans-serif;
+}
+
+body{
+    margin-top: 0px;
+    overflow-x: hidden;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 23px;
+    margin-left: 2rem;
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    transition: color .4 ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:rgb(230, 69, 69)
+}
+
+.search{
+    border: 3px solid rgb(106, 28, 207);
+}
+.search_button{
+    color:white;
+    background-color: rgb(220, 84, 63);
+    transition:background-color .4s ease;
+}
+
+.search_button:hover{
+    color:white;
+    background-color: rgb(106, 28, 207);
+}
+
+/* Default transparent navbar */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Background color when scrolled */
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.5); /* Change this to your preferred color */
+    backdrop-filter: blur(10px);
+}
+
+/* Optional: Change link colors when scrolled */
+.scrolled .nav-link {
+    color: white !important;
+    transition: color .5s ease;
+}
+
+.cart-icon {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 0px;
+    right: -4px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-button{
+    border: 2px solid rgb(93, 42, 182);
+    transition: background-color .4s ease , color .4s ease;
+}
+
+.login-button:hover{
+    color:white;
+    background-color: rgb(97, 26, 221);
+}
+
+.signup-button{
+    color:white;
+    border: 2px solid rgb(93, 42, 182);
+    background-color: rgb(97, 26, 221);
+    transition: background-color .4s ease;
+}
+
+.signup-button:hover{
+    color:black;
+    border: 2px solid rgb(93, 42, 182);
+    background-color:transparent;
+}
+
